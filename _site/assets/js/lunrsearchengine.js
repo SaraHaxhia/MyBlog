@@ -3,7 +3,7 @@ var documents = [{
     "id": 0,
     "url": "http://localhost:4000/mediumish-theme-jekyll/404.html",
     "title": "404",
-    "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
+    "body": "404 Page does not exist!Please use the search bar at the top or visit my homepage! "
     }, {
     "id": 1,
     "url": "http://localhost:4000/mediumish-theme-jekyll/about",

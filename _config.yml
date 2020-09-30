@@ -1,7 +1,7 @@
 # Site
 name: "Sara Haxhia"
 title: "Blog"
-description: "My lil old blog"
+description: "This is my blog."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /mediumish-theme-jekyll
