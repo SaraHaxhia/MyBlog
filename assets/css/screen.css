@@ -66,9 +66,11 @@ section.recent-posts {
 .section-title h2 {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     margin-bottom: 25px;
-    font-weight: 700;
+    font-weight: 700; 
+    font-family: 'Darker Grotesque', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 27px;
+    
 }
 
 .section-title span {
@@ -145,6 +147,7 @@ section.recent-posts {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.25;
+    font-family: 'Darker Grotesque', sans-serif
 }
 
 .listfeaturedtag h4.card-text,
@@ -321,14 +324,18 @@ span.post-read-more a:hover {
     display: none;
 }
 
-.mainheading h1 .sitetitle {
+.mainheading .sitetitle {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
 .mainheading h1.posttitle {
     font-weight: 700;
     margin-bottom: 1rem;
+    font-family: 'Darker Grotesque', sans-serif
+    
 }
+
+
 
 .footer {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
@@ -737,6 +744,8 @@ h6 {
 .layout-page .article-post p {
     margin-bottom: 1rem;
 }
+
+
 
 img {
     max-width: 100%;
