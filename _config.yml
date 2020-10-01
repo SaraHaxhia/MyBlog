@@ -1,10 +1,10 @@
 # Site
-name: "Sara Haxhia"
-title: "Blog"
-description: "This is my blog."
+name: "Hello, "
+title: "My thoughts"
+description: "I spend a lot of my time thinking. Here's some of those thoughts. "
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+baseurl: /SaraHaxhia
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'

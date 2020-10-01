@@ -309,9 +309,19 @@ span.post-read-more a:hover {
     margin-top: 3px;
     cursor: pointer;
 }
+/* subscribe pop up */  
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.hideform {
+    display: none;
+}
 
-.mainheading h1.sitetitle {
+.mainheading h1 .sitetitle {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
@@ -558,6 +568,8 @@ ul.tags li a:hover {
     margin-top: -4px;
 }
 
+
+
 .alertbar {
     box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
     position: fixed;
@@ -588,8 +600,8 @@ ul.tags li a:hover {
 }
 
 .alertbar input[type="submit"] {
-    background-color: #1C9963;
-    border: 1px solid #1C9963;
+    background-color: #2190ff;
+    border: 1px solid #2190ff;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     font-size: 0.85rem;

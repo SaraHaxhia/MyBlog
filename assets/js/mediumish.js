@@ -21,14 +21,14 @@ jQuery(document).ready(function($){
     }
 
     // alertbar later
-    $(document).scroll(function () {
+    /*$(document).scroll(function () {
         var y = $(this).scrollTop();
         if (y > 280) {
             $('.alertbar').fadeIn();
         } else {
             $('.alertbar').fadeOut();
         }
-    });
+    });*/
 
 
     // Smooth on external page
@@ -60,7 +60,18 @@ jQuery(document).ready(function($){
         }
       }
     });
-    
+  /* MAKE POP UP */ 
+  $('#show').on('click', function () {
+      $('.center').show();
+      $(this).hide();
+  })
+  
+  $('#close').on('click', function () {
+      $('.center').hide();
+      $('#show').show();
+  })
+
+
     
     // Hide Header on on scroll down
     var didScroll;
