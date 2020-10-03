@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My thoughts</title>
+    <title>Hello,</title>
     <description>I spend a lot of my time thinking. Here are some of those thoughts. </description>
     <link>http://localhost:4000/SaraHaxhia/</link>
     <atom:link href="http://localhost:4000/SaraHaxhia/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 01 Oct 2020 14:04:34 +0100</pubDate>
-    <lastBuildDate>Thu, 01 Oct 2020 14:04:34 +0100</lastBuildDate>
+    <pubDate>Sat, 03 Oct 2020 10:20:47 +0100</pubDate>
+    <lastBuildDate>Sat, 03 Oct 2020 10:20:47 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>

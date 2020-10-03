@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Sara" 
-author: john
+
 categories: [ Jekyll, tutorial ]
 tags: [red, yellow]
 image: assets/images/11.jpg
