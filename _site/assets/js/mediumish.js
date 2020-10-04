@@ -139,12 +139,12 @@ if (raf) raf(function () {
 });
 else window.addEventListener('load', loadDeferredStyles);
 
-$('#myCarousel').carousel({
+$('#recipeCarousel').carousel({
   interval: 10000
 })
 
 $('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3;
+    var minPerSlide = 2; 
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
@@ -160,6 +160,8 @@ $('.carousel .carousel-item').each(function(){
         next.children(':first-child').clone().appendTo($(this));
       }
 });
+
+
 
 
   
