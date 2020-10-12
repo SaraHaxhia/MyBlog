@@ -139,17 +139,19 @@ if (raf) raf(function () {
 });
 else window.addEventListener('load', loadDeferredStyles);
 
+
 $('#recipeCarousel').carousel({
   interval: 10000
 })
 
+
 $('.carousel .carousel-item').each(function(){
-    var minPerSlide = 2; 
+    var minPerSlide = 3; 
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
     }
-    next.children(':first-child').clone().appendTo($(this));
+    next.children(':first-child').clone().appendTo($(this)); 
     
     for (var i=0;i<minPerSlide;i++) {
         next=next.next();
@@ -163,7 +165,19 @@ $('.carousel .carousel-item').each(function(){
 
 
 
+  
+$('#myCarousel').on('slide.bs.carousel', function() {
+  currentIndex = $('div.active').index() + 1;
+});
+  
+/* do a for loop so that it returns this if screen is big
+but just returns next if screen is small */ 
+function nextIndexFunc() {
+  currentIndex = $('div.active').index() + 1;
+  return $('#recipeCarousel').carousel(currentIndex + 1);
+}
 
-  
-  
-  
+function prevIndexFunc() {
+  currentIndex = ($('div.active').index()) +1;
+  return $('#recipeCarousel').carousel(currentIndex + 1);
+}
