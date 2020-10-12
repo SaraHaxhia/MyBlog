@@ -30,46 +30,45 @@ title: Home
                 <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
                     <div class="carousel-inner w-100" role="listbox">
                     
-                        <div class="carousel-item active">
+                        <!-- <div class="carousel-item active">
                             <div class="col-md-6">
                                 
                                     <img class="img-fluid" src="http://placehold.it/380?text=1">
                                 
                             </div>
-                        </div>
-                    {% assign counter = 0 %}   
-                        {% for post in site.posts %}                   
-                            {% if counter < 2 %}
-                                {% if post.relationships == true %}
-                                    {% increment counter %}
-                                        <div class="carousel-item">
-                                            <div class="col-md-6">
-                                                {% include featuredbox.html %}
-                                            </div>
-                                        </div>
-                                {% endif %}
-                            {% endif %}
-                        
-                        {% endfor %}
-                                    
+                        </div> -->
+                    {% assign my_counter = 0 %}  
+                    {% for post in site.posts %}   
 
-
-                        
-                        
-                        <div class="carousel-item">
-                            <div class="col-md-6">
-                                
-        
-                                    {% for post in site.posts limit:1 %}
-                                        {% include featuredbox.html %}
-                                    {% endfor %}
-
-                                    
-
-                         
-                                
+                        {% if post.relationships == true and my_counter == 0 %}
+                            {% assign my_counter = my_counter|plus:1 %}
+                            <div class="carousel-item active">
+                                <div class="col-md-6">
+                                    {% include featuredbox.html %}
+                                </div>
                             </div>
-                        </div>
+                                    
+                            
+                                       
+                        
+                        {% elsif post.relationships == true %}
+                            {% assign my_counter = my_counter|plus:1 %}
+                            <div class="carousel-item">
+                                <div class="col-md-6">
+                                    {% include featuredbox.html %}
+                                </div>
+                            </div>
+                                    
+                            
+                        {% endif %}
+                    
+                    {% endfor %}
+                                    
+
+
+                        
+                        
+                        
 
                         <!--
                         <div class="carousel-item">
@@ -101,13 +100,7 @@ title: Home
                             </div>
                         </div>
                         -->
-                        <div class="carousel-item">
-                            <div class="col-md-6">
-                                <div class="card card-body">
-                                    <img class="img-fluid" src="http://placehold.it/380?text=6">
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <a class="carousel-control-prev w-auto" data-target="#recipeCarousel" role="button" onclick="prevIndexFunc()">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
