@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+  
 
     //fix for stupid ie object cover
     if (document.documentMode || /Edge/.test(navigator.userAgent)) {
@@ -139,45 +140,85 @@ if (raf) raf(function () {
 });
 else window.addEventListener('load', loadDeferredStyles);
 
-
-$('#recipeCarousel').carousel({
-  interval: 10000
-})
-
-
 $('.carousel .carousel-item').each(function(){
-    var minPerSlide = 3; 
+    var minPerSlide = 2; 
     var next = $(this).next();
-    if (!next.length) {
+    /*if (!next.length) {
     next = $(this).siblings(':first');
-    }
+    } */
     next.children(':first-child').clone().appendTo($(this)); 
     
     for (var i=0;i<minPerSlide;i++) {
         next=next.next();
-        if (!next.length) {
+        /*if (!next.length) {
         	next = $(this).siblings(':first');
-      	}
+      	} */
         
         next.children(':first-child').clone().appendTo($(this));
-      }
+      } 
 });
 
 
 
+var currentIndex = ($('div.active').index()) + 1; 
+var totalItems = $('.carousel-item').length;
+
   
-$('#myCarousel').on('slide.bs.carousel', function() {
+
+function nextIndexFunc(){
   currentIndex = $('div.active').index() + 1;
-});
+  $('.num').html(''+currentIndex+'/'+totalItems+'');
+  if($(window).width() < 770){
+    return $('#recipeCarousel').carousel(currentIndex);
+  } 
+  else {
+    return $('#recipeCarousel').carousel(currentIndex + 1);
+  }
   
-/* do a for loop so that it returns this if screen is big
-but just returns next if screen is small */ 
-function nextIndexFunc() {
-  currentIndex = $('div.active').index() + 1;
-  return $('#recipeCarousel').carousel(currentIndex + 1);
-}
+};
 
 function prevIndexFunc() {
-  currentIndex = ($('div.active').index()) +1;
-  return $('#recipeCarousel').carousel(currentIndex + 1);
+  currentIndex = $('div.active').index() ;
+  $('.num').html(''+currentIndex+'/'+totalItems+'');
+  if($(window).width() < 770){
+    return $('#recipeCarousel').carousel(currentIndex -1);
+  } 
+  else {
+    return $('#recipeCarousel').carousel(currentIndex -2);
+  }
+  
+};
+
+/* PROBLEM: if someone moves one to the right when screen is small
+and then they make the screen bigger and try to go back, it wont work.
+And if someone goes to second last page when screen is small and then make screen big
+there will be problems with arrow - wont disappear
+*/
+
+
+
+$('#recipeCarousel').on('slid.bs.carousel', checkControls);
+
+
+
+
+
+// Hide left / right control if carousel is at first / last position.
+function checkControls() {
+    var $this = $('#recipeCarousel');
+    $this.children('.carousel-control-prev').toggle(
+        !$this.find('.carousel-inner .carousel-item:first-child').hasClass('active')     
+    );
+    if($(window).width() < 770){
+      $this.children('.carousel-control-next').toggle(
+        !$this.find('.carousel-inner .carousel-item:last-child' ).hasClass('active')
+      ); }
+      else { 
+        $this.children('.carousel-control-next').toggle(
+          ($this.find('.carousel-inner .carousel-item:nth-last-child(2)' ).hasClass('active') || $this.find('.carousel-inner .carousel-item:last-child' ).hasClass('active') ) == false
+    );
+        }
 }
+
+/* want OR in my boolean, so it'll work when I have even number of sildes, and odd number 
+also want to figure out how to make run time FASTER.. */ 

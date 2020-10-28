@@ -4,8 +4,8 @@ title:  "About Bundler"
 author: sal
 categories: [ Jekyll ]
 image: assets/images/2.jpg
+productivity: true
 relationships: true
-
 ---
 `gem install bundler` installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:
 

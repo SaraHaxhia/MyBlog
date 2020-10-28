@@ -19,6 +19,10 @@
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Darker+Grotesque:wght@700;800&display=swap" rel="stylesheet">
+
+
+
+
 </head>
 
 {% if jekyll.environment == 'production' %}
@@ -149,10 +153,9 @@ ga('send', 'pageview');
 </div> -->
 
 
-
 <!-- Categories Jumbotron
 ================================================== -->
-<div class="jumbotron fortags">
+<!--<div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
 		<div class="col-md-4 transpdark align-self-center text-center h-100">
             <div class="d-md-flex align-items-center justify-content-center h-100">
@@ -173,15 +176,17 @@ ga('send', 'pageview');
             {% assign categories_list = nil %}
 		</div>
 	</div>
-</div>
+</div>-->
 
+</div>
 <!-- Begin Footer
 ================================================== -->
 <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+            <div class="col-md-6 col-sm-6 text-center footerText  ">
+                Copyright © {{ site.time | date: "%Y" }} 
+                <span class = copyright> {{ site.name }} </span> 
             </div>
             
         </div>
@@ -190,8 +195,9 @@ ga('send', 'pageview');
 <!-- End Footer
 ================================================== -->
 
-</div> <!-- /.site-content -->
+ <!-- /.site-content -->
 </div>
+
 
 <!-- Scripts
 ================================================== -->
@@ -211,6 +217,8 @@ ga('send', 'pageview');
 {% if page.layout == 'post' %}
 <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
 {% endif %}
+
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@ License: https://www.wowthemes.net/freebies-license/
 */
 @media screen and (min-width:1500px) {
     html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    .container {max-width:80%;} 
 }
 .mainheading {
     padding: 1rem 0rem;
@@ -147,7 +147,12 @@ section.recent-posts {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.25;
-    font-family: 'Darker Grotesque', sans-serif
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.listfeaturedtag .card {
+	min-height: 250px;
+	max-height: 250px;
 }
 
 .listfeaturedtag h4.card-text,
@@ -334,14 +339,28 @@ span.post-read-more a:hover {
 
 .footer {
     border-top: 1px solid rgba(0, 0, 0, .05) !important;
-    padding-top: 15px;
-    padding-bottom: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 0.8rem;
     color: rgba(0, 0, 0, .44);
     margin-top: 50px;
-    margin-bottom: 62px;
+    margin-bottom: 0px;
+    
     position: relative;
     background: #fff;
+    
+    width: 100%;
+    
+} 
+.footerText { 
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.copyright {
+    font-family: 'Dancing Script', cursive;
+    font-size: medium;
+    
 }
 
 .link-dark {
@@ -416,8 +435,8 @@ blockquote {
 
 @media (max-width:999px) {
     .featured-box-img-cover {
-        height: 359px;
-    }
+        height: 100%; 
+    } 
 
     .alertbar {
         position: relative !Important;
@@ -483,7 +502,7 @@ blockquote {
     .post-top-meta .col-md-10 {
         text-align: center;
     }
-}
+} 
 
 @media (max-width:767px) {
     .post-top-meta.authorpage {
@@ -676,6 +695,7 @@ ul.tags li a:hover {
 .sociallinks {
     margin: 1rem 0;
 }
+
 
 .sociallinks a {
     background: #666;
@@ -937,7 +957,7 @@ body {
     }
     .carousel-inner .carousel-item > div:first-child {
         display: block;
-    }
+    } 
 }
 
 .carousel-inner .carousel-item.active,
@@ -966,3 +986,6 @@ body {
     transform: translateX(0);
 } */
 
+.secondPic {
+    margin-top: 30px;
+}
