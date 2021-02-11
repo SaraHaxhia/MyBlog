@@ -160,31 +160,51 @@ $('.carousel .carousel-item').each(function(){
 
 
 
-var currentIndex = ($('div.active').index()) + 1; 
-var totalItems = $('.carousel-item').length;
+//var currentIndex = ($('div.active').index()) + 1; 
+//var totalItems = $('.carousel-item').length;
 
-  
+//function currentIndex(name1) {
+  //($('div.active').index()) + 1;
+//}; 
 
-function nextIndexFunc(){
-  currentIndex = $('div.active').index() + 1;
-  $('.num').html(''+currentIndex+'/'+totalItems+'');
+
+
+function nextIndexFunc(carouselName){
+  var $this = $(carouselName);
+  var currentIndex = $this.find('div.active').index() + 1;
+  //var currentIndex = $('div.active').index() + 1; 
+  var totalItems = $('.carousel-item').length;
+
+  $(carouselName).bind('slid', function() {
+    currentIndex = $('div.active').index() + 1;
+   $('.num').html(''+currentIndex+'/'+totalItems+''); 
+  });   
+
+  //$('.num').html(''+currentIndex+'/'+totalItems+''); //this is the problem :( 
   if($(window).width() < 770){
-    return $('#recipeCarousel').carousel(currentIndex);
+    return $(carouselName).carousel(currentIndex);
   } 
   else {
-    return $('#recipeCarousel').carousel(currentIndex + 1);
+    return $(carouselName).carousel(currentIndex + 1);
   }
   
 };
 
-function prevIndexFunc() {
-  currentIndex = $('div.active').index() ;
-  $('.num').html(''+currentIndex+'/'+totalItems+'');
+function prevIndexFunc(carouselName) {
+  //var currentIndex = $('div.active').index() + 1; 
+  var totalItems = $( '.carousel-item').length;
+  var $this = $(carouselName);
+  var currentIndex = $this.find('div.active').index() + 1;
+  $(carouselName).bind('slid', function() {
+    currentIndex = $('div.active').index() -1;
+   $('.num').html(''+currentIndex+'/'+totalItems+''); 
+  });
+
   if($(window).width() < 770){
-    return $('#recipeCarousel').carousel(currentIndex -1);
+    return $(carouselName).carousel(currentIndex -2);
   } 
   else {
-    return $('#recipeCarousel').carousel(currentIndex -2);
+    return $(carouselName).carousel(currentIndex -3);
   }
   
 };
@@ -197,15 +217,26 @@ there will be problems with arrow - wont disappear
 
 
 
-$('#recipeCarousel').on('slid.bs.carousel', checkControls);
+$('.carouselLife').on('slid.bs.carousel', function() {
+  checkControls('.carouselLife');
+}); 
+$('.carouselConcrete').on('slid.bs.carousel', function() {
+  checkControls('.carouselConcrete');
+}); 
+$('.carouselRelationships').on('slid.bs.carousel', function() {
+  checkControls('.carouselRelationships');
+}); 
+$('.carouselAI').on('slid.bs.carousel', function() {
+  checkControls('.carouselAI');
+}); 
 
 
 
 
 
 // Hide left / right control if carousel is at first / last position.
-function checkControls() {
-    var $this = $('#recipeCarousel');
+function checkControls(carouselName) {
+    var $this = $(carouselName);
     $this.children('.carousel-control-prev').toggle(
         !$this.find('.carousel-inner .carousel-item:first-child').hasClass('active')     
     );

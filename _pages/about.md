@@ -31,10 +31,16 @@ Love me.  </p>
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
+
 <div> <img src="{{site.baseurl}}/assets/images/1.jpg" alt="Italian Trulli"> </div>
-<div class = "secondPic">
-<img src="{{site.baseurl}}/assets/images/2.jpg" alt="Italian Trulli">
-</div><!-- <h5>Buy me a coffee</h5>-->
+<div>
+<figure>
+<figcaption>Contact me at:
+sarahaxhia@gmail.com
+</figcaption>
+</figure>
+</div>
+<!-- <h5>Buy me a coffee</h5>-->
 <!--
 <p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>-->
 <!--

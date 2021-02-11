@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Never stopped worrying or loving the bomb"
-categories: [ Jekyll ]
+categories: [ Life ]
 image: assets/images/14.jpg
 AI: true
 ---

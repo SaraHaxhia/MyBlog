@@ -27,8 +27,8 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100" data-interval="false"  data-ride="carousel">
-                    <div class="carousel-inner w-100" role="listbox">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselLife" data-interval="false"  data-ride="carousel">
+                    <div class="carousel-inner w-100 " role="listbox">
                     
                       
                     {% assign my_counter = 0 %}  
@@ -62,11 +62,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target="#recipeCarousel" role="button" onclick="prevIndexFunc()">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselLife" role="button" onclick="prevIndexFunc('.carouselLife')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target="#recipeCarousel" role="button" onclick="nextIndexFunc()" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselLife" role="button" onclick="nextIndexFunc('.carouselLife')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -95,7 +95,7 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100" data-interval="false"  data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselConcrete" data-interval="false"  data-ride="carousel">
                     <div class="carousel-inner w-100" role="listbox">
                     
                       
@@ -104,7 +104,7 @@ title: Home
 
                         {% if post.concrete == true and my_counter == 0 %}
                             {% assign my_counter = my_counter|plus:1 %}
-                            <div class="carousel-item carousel-item-1 active">
+                            <div class="concrete carousel-item carousel-item-1 active">
                                 <div class="col-md-6 ">
                                     {% include featuredbox.html %}
                                 </div>
@@ -130,11 +130,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target="#recipeCarousel" role="button" onclick="prevIndexFunc()">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselConcrete" role="button" onclick="prevIndexFunc('.carouselConcrete')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target="#recipeCarousel" role="button" onclick="nextIndexFunc()" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselConcrete" role="button" onclick="nextIndexFunc('.carouselConcrete')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -163,7 +163,7 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100" data-interval="false"  data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselRelationships" data-interval="false"  data-ride="carousel">
                     <div class="carousel-inner w-100" role="listbox">
                     
                       
@@ -198,11 +198,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target="#recipeCarousel" role="button" onclick="prevIndexFunc()">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselRelationships" role="button" onclick="prevIndexFunc('.carouselRelationships')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target="#recipeCarousel" role="button" onclick="nextIndexFunc()" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselRelationships" role="button" onclick="nextIndexFunc('.carouselRelationships')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -231,7 +231,7 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100" data-interval="false"  data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselAI" data-interval="false"  data-ride="carousel">
                     <div class="carousel-inner w-100" role="listbox">
                     
                       
@@ -266,11 +266,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target="#recipeCarousel" role="button" onclick="prevIndexFunc()">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselAI" role="button" onclick="prevIndexFunc('.carouselAI')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target="#recipeCarousel" role="button" onclick="nextIndexFunc()" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselAI" role="button" onclick="nextIndexFunc('.carouselAI')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -291,39 +291,4 @@ title: Home
 
 
 {% endif %}
-
-
-
-<!-- 
-
- Posts Index
-================================================== -->
-<!-- <section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section> -->
-
-<!-- Pagination
-================================================== --> 
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
 
