@@ -12,7 +12,7 @@ Lukas Melgaard and I are working on a podcast where we explore some math and phy
 </p>
 
 <p>
-We try to be curious about the world around us and come up with questions. Then we try and figure out how things work by building and breaking our models. 
+We try to be curious about the world around us and come up with questions. Then we try and figure out how things work by building and breaking our models. It's all about making gears (link) and running away from passwords (link). 
 </p>
 
 <p> Example questions: </p>

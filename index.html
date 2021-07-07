@@ -14,12 +14,17 @@ title: Home
     </p>
 </div>
 
+
+
+
+
+
 <!-- Featured
 ================================================== -->
 
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span> How to do life </span></h2>
+        <h2><span> Understanding the world </span></h2>
     </div>
     <div class="row">
     
@@ -27,14 +32,14 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100 carouselLife" data-interval="false"  data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselUnderstanding" data-interval="false"  data-ride="carousel">
                     <div class="carousel-inner w-100 " role="listbox">
                     
                       
                     {% assign my_counter = 0 %}  
                     {% for post in site.posts %}   
 
-                        {% if post.life == true and my_counter == 0 %}
+                        {% if post.understanding == true and my_counter == 0 %}
                             {% assign my_counter = my_counter|plus:1 %}
                             <div class="carousel-item carousel-item-1 active">
                                 <div class="col-md-6 ">
@@ -45,7 +50,7 @@ title: Home
                             
                                        
                         
-                        {% elsif post.life == true %}
+                        {% elsif post.understanding == true %}
                             {% assign my_counter = my_counter|plus:1 %}
                             <div class="carousel-item">
                                 <div class="col-md-6 ">
@@ -62,11 +67,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselLife" role="button" onclick="prevIndexFunc('.carouselLife')">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselUnderstanding" role="button" onclick="prevIndexFunc('.carouselUnderstanding')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselLife" role="button" onclick="nextIndexFunc('.carouselLife')" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselUnderstanding" role="button" onclick="nextIndexFunc('.carouselUnderstanding')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -87,7 +92,7 @@ title: Home
 
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span> Concrete techniques </span></h2>
+        <h2><span> Thinking about thinking </span></h2>
     </div>
     <div class="row">
     
@@ -95,14 +100,14 @@ title: Home
         <div class="container ">
             
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100 carouselConcrete" data-interval="false"  data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselMeta" data-interval="false"  data-ride="carousel">
                     <div class="carousel-inner w-100" role="listbox">
                     
                       
                     {% assign my_counter = 0 %}  
                     {% for post in site.posts %}   
 
-                        {% if post.concrete == true and my_counter == 0 %}
+                        {% if post.meta == true and my_counter == 0 %}
                             {% assign my_counter = my_counter|plus:1 %}
                             <div class="concrete carousel-item carousel-item-1 active">
                                 <div class="col-md-6 ">
@@ -113,7 +118,7 @@ title: Home
                             
                                        
                         
-                        {% elsif post.concrete == true %}
+                        {% elsif post.meta == true %}
                             {% assign my_counter = my_counter|plus:1 %}
                             <div class="carousel-item">
                                 <div class="col-md-6 ">
@@ -130,11 +135,11 @@ title: Home
                         
                     </div>
                     
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselConcrete" role="button" onclick="prevIndexFunc('.carouselConcrete')">
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselMeta" role="button" onclick="prevIndexFunc('.carouselMeta')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselConcrete" role="button" onclick="nextIndexFunc('.carouselConcrete')" >
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselMeta" role="button" onclick="nextIndexFunc('.carouselMeta')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -155,7 +160,75 @@ title: Home
 
 <section class="featured-posts">
     <div class="section-title">
-        <h2><span> Relationships </span></h2>
+        <h2><span> Productivity </span></h2>
+    </div>
+    <div class="row">
+    
+
+        <div class="container ">
+            
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselProductivity" data-interval="false"  data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                    
+                      
+                    {% assign my_counter = 0 %}  
+                    {% for post in site.posts %}   
+
+                        {% if post.productivity == true and my_counter == 0 %}
+                            {% assign my_counter = my_counter|plus:1 %}
+                            <div class="carousel-item carousel-item-1 active">
+                                <div class="col-md-6 ">
+                                    {% include featuredbox.html %}
+                                </div>
+                            </div>
+                                    
+                            
+                                       
+                        
+                        {% elsif post.productivity == true %}
+                            {% assign my_counter = my_counter|plus:1 %}
+                            <div class="carousel-item">
+                                <div class="col-md-6 ">
+                                    {% include featuredbox.html %}
+                                </div>
+                            </div>
+                                    
+                            
+                        {% endif %}
+                    
+                    {% endfor %}
+                                    
+
+                        
+                    </div>
+                    
+                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselProductivity" role="button" onclick="prevIndexFunc('.carouselProductivity')">
+                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselProductivity" role="button" onclick="nextIndexFunc('.carouselProductivity')" >
+                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+
+
+    
+
+    </div>
+</section>
+
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span> Relationships / social stuff </span></h2>
     </div>
     <div class="row">
     
@@ -203,74 +276,6 @@ title: Home
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next w-auto carousel-control " data-target=".carouselRelationships" role="button" onclick="nextIndexFunc('.carouselRelationships')" >
-                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    
-                </div>
-            </div>
-            
-        </div>
-        
-
-
-
-
-    
-
-    </div>
-</section>
-
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span> AI Safety </span></h2>
-    </div>
-    <div class="row">
-    
-
-        <div class="container ">
-            
-            <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100 carouselAI" data-interval="false"  data-ride="carousel">
-                    <div class="carousel-inner w-100" role="listbox">
-                    
-                      
-                    {% assign my_counter = 0 %}  
-                    {% for post in site.posts %}   
-
-                        {% if post.AI == true and my_counter == 0 %}
-                            {% assign my_counter = my_counter|plus:1 %}
-                            <div class="carousel-item carousel-item-1 active">
-                                <div class="col-md-6 ">
-                                    {% include featuredbox.html %}
-                                </div>
-                            </div>
-                                    
-                            
-                                       
-                        
-                        {% elsif post.AI == true %}
-                            {% assign my_counter = my_counter|plus:1 %}
-                            <div class="carousel-item">
-                                <div class="col-md-6 ">
-                                    {% include featuredbox.html %}
-                                </div>
-                            </div>
-                                    
-                            
-                        {% endif %}
-                    
-                    {% endfor %}
-                                    
-
-                        
-                    </div>
-                    
-                    <a class="carousel-control-prev w-auto "  style="display:none;" data-target=".carouselAI" role="button" onclick="prevIndexFunc('.carouselAI')">
-                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next w-auto carousel-control " data-target=".carouselAI" role="button" onclick="nextIndexFunc('.carouselAI')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>

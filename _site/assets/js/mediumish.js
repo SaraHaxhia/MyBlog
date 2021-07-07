@@ -217,17 +217,17 @@ there will be problems with arrow - wont disappear
 
 
 
-$('.carouselLife').on('slid.bs.carousel', function() {
-  checkControls('.carouselLife');
+$('.carouselUnderstanding').on('slid.bs.carousel', function() {
+  checkControls('.carouselUnderstanding');
 }); 
-$('.carouselConcrete').on('slid.bs.carousel', function() {
-  checkControls('.carouselConcrete');
+$('.carouselMeta').on('slid.bs.carousel', function() {
+  checkControls('.carouselMeta');
+}); 
+$('.carouselProductivity').on('slid.bs.carousel', function() {
+  checkControls('.carouselProductivity');
 }); 
 $('.carouselRelationships').on('slid.bs.carousel', function() {
   checkControls('.carouselRelationships');
-}); 
-$('.carouselAI').on('slid.bs.carousel', function() {
-  checkControls('.carouselAI');
 }); 
 
 
