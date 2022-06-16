@@ -25,7 +25,6 @@ We try to be curious about the world around us and come up with questions. Then 
     <li> ksnfkafna </li>
 </ul>
 
-<p> Watch this space :) </p>
 
 </div>
 
