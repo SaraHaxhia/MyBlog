@@ -3,11 +3,11 @@
   <channel>
     <title>Hello,</title>
     <description>I spend a lot of my time thinking. Here are some of those thoughts. </description>
-    <link>http://localhost:4000/SaraHaxhia/</link>
-    <atom:link href="http://localhost:4000/SaraHaxhia/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Jun 2021 15:14:07 +0100</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 15:14:07 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 16 Jun 2022 17:05:20 +0200</pubDate>
+    <lastBuildDate>Thu, 16 Jun 2022 17:05:20 +0200</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
     
       <item>
         <title>Short term vs. long term goals</title>
@@ -26,9 +26,9 @@
 &lt;p&gt;We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/shortterm_vs_longterm/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/shortterm_vs_longterm/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/shortterm_vs_longterm/</link>
+        <guid isPermaLink="true">/shortterm_vs_longterm/</guid>
         
         
         <category>Jekyll</category>
@@ -41,19 +41,19 @@
     
       <item>
         <title>Reassurance as update checker</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new &amp;lt;PATH&amp;gt;&lt;/code&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called &lt;code class=&quot;highlighter-rouge&quot;&gt;myblog&lt;/code&gt;. Here are some additional details:&lt;/p&gt;
+        <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new &amp;lt;PATH&amp;gt;&lt;/code&gt; installs a new Jekyll site at the path specified (relative to current directory). In this case, Jekyll will be installed in a directory called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;myblog&lt;/code&gt;. Here are some additional details:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;To install the Jekyll site into the directory you’re currently in, run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; automatically initiates &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install the dependencies required. (If you don’t want Bundler to install the gems, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --skip-bundle&lt;/code&gt;.)&lt;/li&gt;
-  &lt;li&gt;By default, the Jekyll site installed by &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.&lt;/li&gt;
-  &lt;li&gt;We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog --blank&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;To learn about other parameters you can include with &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;, type &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new --help&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;To install the Jekyll site into the directory you’re currently in, run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; . If the existing directory isn’t empty, you can pass the –force option with jekyll new . –force.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; automatically initiates &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install the dependencies required. (If you don’t want Bundler to install the gems, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new myblog --skip-bundle&lt;/code&gt;.)&lt;/li&gt;
+  &lt;li&gt;By default, the Jekyll site installed by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt; uses a gem-based theme called Minima. With gem-based themes, some of the directories and files are stored in the theme-gem, hidden from your immediate view.&lt;/li&gt;
+  &lt;li&gt;We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new myblog --blank&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;To learn about other parameters you can include with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;, type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new --help&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/reassurance/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/reassurance/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/reassurance/</link>
+        <guid isPermaLink="true">/reassurance/</guid>
         
         
         <category>Jekyll</category>
@@ -64,19 +64,19 @@
     
       <item>
         <title>Top 10 productivity tips</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt; installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:&lt;/p&gt;
+        <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install bundler&lt;/code&gt; installs the bundler gem through RubyGems. You only need to install it once - not every time you create a new Jekyll project. Here are some additional details:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;bundler&lt;/code&gt; is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundler&lt;/code&gt; is a gem that manages other Ruby gems. It makes sure your gems and gem versions are compatible, and that you have all necessary dependencies each gem requires.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; files inform &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt; and just &lt;code class=&quot;highlighter-rouge&quot;&gt;run jekyll serve&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; files inform &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; about the gem requirements in your site. If your site doesn’t have these Gemfiles, you can omit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec&lt;/code&gt; and just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;run jekyll serve&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;When you run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; uses the gems and versions as specified in &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; to ensure your Jekyll site builds with no compatibility or dependency conflicts.&lt;/p&gt;
+&lt;p&gt;When you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; uses the gems and versions as specified in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; to ensure your Jekyll site builds with no compatibility or dependency conflicts.&lt;/p&gt;
 
-&lt;p&gt;For more information about how to use &lt;code class=&quot;highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.&lt;/p&gt;
+&lt;p&gt;For more information about how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bundler&lt;/code&gt; in your Jekyll project, this tutorial should provide answers to the most common questions and explain how to get up and running quickly.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/productivity-tips/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/productivity-tips/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/productivity-tips/</link>
+        <guid isPermaLink="true">/productivity-tips/</guid>
         
         
         <category>Jekyll</category>
@@ -92,9 +92,9 @@
 &lt;p&gt;The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/power-slots/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/power-slots/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/power-slots/</link>
+        <guid isPermaLink="true">/power-slots/</guid>
         
         
         <category>Jekyll</category>
@@ -133,9 +133,9 @@ rating: 4.5
 ---
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/playground/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/playground/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/playground/</link>
+        <guid isPermaLink="true">/playground/</guid>
         
         <category>red</category>
         
@@ -168,9 +168,9 @@ rating: 4.5
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;spoiler&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;My hidden paragraph here.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/gears_on_fuzzy_models/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/gears_on_fuzzy_models/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/gears_on_fuzzy_models/</link>
+        <guid isPermaLink="true">/gears_on_fuzzy_models/</guid>
         
         
         <category>Jekyll</category>
@@ -190,9 +190,9 @@ rating: 4.5
 &lt;p&gt;I don’t want you to think that I’m boasting, but I do believe I’m one of the greatest travellers that ever was; and if anybody, living or dead, has ever gone through with more than I have I’d like to hear about it.
 Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was married to the author Eleanor Stackhouse Atkinson, author of the children’s classic Greyfriars Bobby, which was based on the (supposedly) true story of a Scottish dog who spent fourteen years guarding his masters grave. The couple were both committed to education and published a weekly magazine for Chicago high school students called The Little Chronicle, as well as working for Encyclopaedia companies later in life.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/framings/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/framings/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/framings/</link>
+        <guid isPermaLink="true">/framings/</guid>
         
         
         <category>Life</category>
@@ -219,9 +219,9 @@ Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was mar
 
 &lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
 
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
+&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.my-link {
@@ -231,7 +231,7 @@ Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was mar
 
 &lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/SaraHaxhia/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
 
@@ -245,9 +245,9 @@ Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was mar
 
 &lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/day-structure/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/day-structure/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/day-structure/</link>
+        <guid isPermaLink="true">/day-structure/</guid>
         
         
         <category>Jekyll</category>
@@ -270,9 +270,9 @@ Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was mar
   &lt;p&gt;It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/cryptocurrency/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/cryptocurrency/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/cryptocurrency/</link>
+        <guid isPermaLink="true">/cryptocurrency/</guid>
         
         
         <category>Jekyll</category>
@@ -300,9 +300,9 @@ Hallam Hawksworth was the pen-name of teacher Francis Blake Atkinson. He was mar
 &lt;p&gt;We must remember that intelligence is not enough. Intelligence plus character–that is the goal of true education. The complete education gives one not only power of concentration, but worthy objectives upon which to concentrate. The broad education will, therefore, transmit to one not only the accumulated knowledge of the race but also the accumulated experience of social living.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 16 Jan 2021 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/SaraHaxhia/WHATDOYOUKNOW/</link>
-        <guid isPermaLink="true">http://localhost:4000/SaraHaxhia/WHATDOYOUKNOW/</guid>
+        <pubDate>Sat, 16 Jan 2021 00:00:00 +0100</pubDate>
+        <link>/WHATDOYOUKNOW/</link>
+        <guid isPermaLink="true">/WHATDOYOUKNOW/</guid>
         
         
         <category>Jekyll</category>
