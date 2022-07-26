@@ -7,8 +7,6 @@ source "https://rubygems.org"
 #     bundle exec jekyll serve
 #
 
-gem 'guard'
-gem 'guard-jekyll-plus'
 gem 'webrick'
 
 # If you have any plugins, put them here!

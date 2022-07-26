@@ -8,14 +8,17 @@ html, body {
     height: 100%;
 }
 
-.container {
+.site-content > .container {
     flex: 1 0 auto;
 }
 
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;} 
+    html {
+        /* Increase the font size on higher resolutions */
+        font-size:18px;
+    }
 }
+
 .mainheading {
     padding: 1rem 0rem;
 }
@@ -156,11 +159,6 @@ section.recent-posts {
     font-weight: 700;
     line-height: 1.25;
     font-family: 'Darker Grotesque', sans-serif;
-}
-
-.listfeaturedtag .card {
-	min-height: 250px;
-	max-height: 250px;
 }
 
 .listfeaturedtag h4.card-text,
