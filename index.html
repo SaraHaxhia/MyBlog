@@ -89,7 +89,7 @@ title: Home
     <div class="row">
         <div class="container">
             <div class="row mx-auto my-auto">
-                <div id="recipeCarousel" class="carousel slide w-100 carouselUnderstanding" data-interval="false" data-ride="carousel">
+                <div id="recipeCarousel" class="carousel slide w-100 carouselProductivity" data-interval="false" data-ride="carousel">
                     <div class="carousel-inner w-100 h-100" role="listbox">
                     {% assign posts = site.posts | where: "productivity", true %}
                     {% for post in posts %}
@@ -100,11 +100,11 @@ title: Home
                         </div>
                     {% endfor %}
                     </div>
-                    <a class="carousel-control-prev w-auto" style="display:none;" data-target=".carouselUnderstanding" role="button" onclick="prevIndexFunc('.carouselUnderstanding')">
+                    <a class="carousel-control-prev w-auto" style="display:none;" data-target=".carouselProductivity" role="button" onclick="prevIndexFunc('.carouselProductivity')">
                         <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next w-auto carousel-control" data-target=".carouselUnderstanding" role="button" onclick="nextIndexFunc('.carouselUnderstanding')" >
+                    <a class="carousel-control-next w-auto carousel-control" data-target=".carouselProductivity" role="button" onclick="nextIndexFunc('.carouselProductivity')" >
                         <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
