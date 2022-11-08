@@ -22,32 +22,73 @@ title: Home
     <div class="section-title">
         <h2><span>Understanding the world</span></h2>
     </div>
-    <div class="row">
-        <div class="container">
-            <div class="row mx-auto my-auto" style="height: 350px;">
-                <div id="recipeCarousel" class="carousel slide w-100 carouselUnderstanding" data-interval="false" data-ride="carousel">
-                    <div class="carousel-inner w-100 h-100" role="listbox">
-                    {% assign posts = site.posts | where: "understanding", true %}
-                    {% for post in posts %}
-                        <div class="carousel-item h-100{% if forloop.first %} carousel-item-1 active{% endif %}">
-                            <div class="col-md-6 h-100">
-                                {% include featuredbox.html %}
-                            </div>
-                        </div>
-                    {% endfor %}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        {% assign posts = site.posts | where: "understanding", true %}
+        {% for post in posts %}
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        {% if site.lazyimages == "enabled" %}
+                        <img class="featured-box-img-cover card-img-top lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains " ://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}">
+                        {% else %}
+                        <img class="featured-box-img-cover card-img-top" src="{% if post.image contains " ://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}">
+                        {% endif %}
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
+                        <p class="card-text text-muted">{{ post.excerpt | strip_html | truncate: 100 }}</p>
                     </div>
-                    <a class="carousel-control-prev w-auto" style="display:none;" data-target=".carouselUnderstanding" role="button" onclick="prevIndexFunc('.carouselUnderstanding')">
-                        <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle carousel-control" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next w-auto carousel-control" data-target=".carouselUnderstanding" role="button" onclick="nextIndexFunc('.carouselUnderstanding')" >
-                        <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="card-footer">
+                        <small class="text-muted">{{ post.date | date_to_string }}</small>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+
+<!--<div class="listfeaturedtag h-100">
+    <div class="row h-100">
+        <div class="col-5 col-md-5 col-lg-5 pr-lg-0">
+            <div class="wrapthumbnail">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {% if site.lazyimages == "enabled" %}
+                    <img class="featured-box-img-cover lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains " ://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}">
+                    {% else %}
+                    <img class="featured-box-img-cover" src="{% if post.image contains " ://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}">
+                    {% endif %}
+                </a>
+            </div>
+        </div>
+        <div class="col-7 col-md-7 col-lg-7">
+            <div class="card h-100">
+                <div class="card-header b-0 bg-white mt-auto">
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                </div>
+                <div class="card-body h-100">
+                    <h2 class="card-title">
+                        <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                    <h4 class="card-text"> {{ post.excerpt | strip_html | truncate: 100 }} </h4>
                 </div>
             </div>
         </div>
     </div>
+</div>-->
+
+
+
+
+    <!--<div class="row">
+        {% assign posts = site.posts | where: "understanding", true %}
+        {% for post in posts %}
+            <div class="col-12 col-sm-6">
+                {% include featuredbox.html %}
+            </div>
+        {% endfor %}
+    </div>-->
 </section>
 
 <section class="featured-posts">
