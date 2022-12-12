@@ -143,13 +143,16 @@ section.recent-posts {
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
-    border-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .listfeaturedtag .wrapthumbnail {
     height: 290px;
     flex: 0 0 auto;
     height: 100%;
+    overflow: hidden;
+    border-radius: calc(.25rem - 1px) 0 0 calc(.25rem - 1px);
 }
 
 .maxthumb {
