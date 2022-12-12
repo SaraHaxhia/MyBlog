@@ -131,6 +131,14 @@ section.recent-posts {
     color: #343a40;
 }
 
+.slick-prev {
+    left: -10px;
+}
+
+.slick-next {
+    right: -10px;
+}
+
 .listfeaturedtag .card {
     border-top: 0;
     border-right: 0;
